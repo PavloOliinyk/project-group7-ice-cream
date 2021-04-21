@@ -1,0 +1,28 @@
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+  letter-spacing: 0.06em;
+  color: var(--secondaryTextColor);
+
+  border-radius: 22px;
+  border-style: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  &--red {
+    background-color: var(--secondaryTextColor);
+
+    color: var(--primaryTextColor);
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
+  }
+}
