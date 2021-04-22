@@ -1,7 +1,22 @@
-.customer-reviews__description {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.55;
+.customer-reviews {
+  &__wrapper {
+    padding: 40px 65px 20px;
+    background-color: #fafafa;
+  }
 
-  color: var(--secondaryTextColor);
+  &__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+
+    color: var(--secondaryTextColor);
+  }
+
+  &__author {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+
+    color: var(--secondaryTextColor);
+  }
 }
