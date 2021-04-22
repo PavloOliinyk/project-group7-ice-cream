@@ -3,7 +3,7 @@
   font-weight: 700;
   line-height: 1.31;
   letter-spacing: 0.06em;
-  color: var(--secondaryTextColor);
+  color: var(--accentColor);
 
   border-radius: 22px;
   border-style: none;
@@ -16,7 +16,7 @@
   }
 
   &--red {
-    background-color: var(--secondaryTextColor);
+    background-color: var(--accentColor);
 
     color: var(--primaryTextColor);
 

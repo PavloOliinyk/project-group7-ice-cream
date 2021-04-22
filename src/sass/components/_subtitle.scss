@@ -1,6 +1,8 @@
 .subtitle {
-  font-family: var(--secondaryFont);
-  font-size: 30px;
-  line-height: 1.13;
-  text-transform: uppercase;
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+
+  color: var(--secondaryTextColor);
 }
