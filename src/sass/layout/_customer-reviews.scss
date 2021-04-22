@@ -1,15 +1,33 @@
 .customer-reviews {
+  & .container {
+    text-align: center;
+  }
+
   &__wrapper {
-    padding: 40px 65px 20px;
     background-color: #fafafa;
+    padding: 43px 59px 26px;
+    margin-bottom: 52px;
   }
 
   &__description {
+    position: relative;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
 
     color: var(--secondaryTextColor);
+
+    &::before {
+      position: absolute;
+
+      content: '';
+      background-image: url(../images/quotes.png);
+      width: 54px;
+      height: 40px;
+      top: -15px;
+      left: 4px;
+    }
   }
 
   &__author {
