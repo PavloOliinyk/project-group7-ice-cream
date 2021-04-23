@@ -35,20 +35,20 @@
     </button>
 </div>
 <div class="mobile-menu" data-menu>
-    <button type="mobile-menu__close-btn" data-menu-close>
-        <svg>
-            <use></use>
+    <button class="mobile-menu__close-btn" type="button" data-menu-close>
+        <svg class="mobile-menu__close-btn-icon">
+            <use href="./images/icons.svg#icon-close"></use>
         </svg>
     </button>
-    <button type="mobile-menu__modal-btn">
+    <button class="mobile-menu__modal-btn" type="button">
         Buy now
-        <svg class="modal-btn__icon">
+        <svg class="mobile-menu__modal-btn-icon">
             <use href="./images/icons.svg#icon-pointer"></use>
         </svg>
     </button>
     <ul class="mobile-nav list">
         <li class="mobile-nav__item">
-            <a class="mobile-nav__link link" href="./index.html">Home</a>
+            <a class="mobile-nav__link mobile-nav__link_current link" href="./index.html">Home</a>
         </li>
         <li class="mobile-nav__item">
             <a class="mobile-nav__link link" href="">About us</a>
