@@ -5,7 +5,6 @@
 .footer__suptitle {
   margin-bottom: 17px;
   font-family: var(--secondaryFont);
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
@@ -17,7 +16,6 @@
   margin-bottom: 43px;
   width: 200px;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.14;
@@ -58,17 +56,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: var(--primaryTextColor);
+}
+.footer__icon {
+  fill: currentColor;
 }
 .footer__contact-text {
   margin-bottom: 43px;
 
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
-
-  text-align: right;
 
   color: var(--secondaryTextColor);
 }
@@ -80,8 +79,6 @@
   margin: auto;
   width: 150px;
 
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.86;
@@ -99,10 +96,15 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer__contact-text {
+    text-align: right;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 80px;
-    .container {
+    &-title__wrapper {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
