@@ -36,15 +36,15 @@
     }
 
     &:nth-child(1)::before {
-      background-image: url('/images/icon1.png');
+      background-image: url('../images/icon1.png');
     }
 
     &:nth-child(2)::before {
-      background-image: url('/images/icon2.png');
+      background-image: url('../images/icon2.png');
     }
 
     &:nth-child(3)::before {
-      background-image: url('/images/icon3.png');
+      background-image: url('../images/icon3.png');
     }
   }
 
