@@ -1,5 +1,5 @@
 .advantages {
-  background-color: var(--backgroundColor);
+  background-color: #fff5f6;
   padding: 40px 0;
 
   @media screen and (min-width: 768px) {
@@ -8,6 +8,7 @@
 
   &__list {
     flex-wrap: wrap;
+
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: nowrap;
@@ -15,7 +16,7 @@
   }
 
   &__item {
-    &:before {
+    &::before {
       content: '';
       display: block;
       height: 50px;
@@ -28,37 +29,28 @@
       @media screen and (min-width: 768px) {
         margin-bottom: 36px;
       }
+
       @media screen and (min-width: 1200px) {
         margin-bottom: 40px;
       }
     }
 
-    &:nth-child(1):before {
-      background-image: url('/images/advantages/icon1_mobi.png');
-
-      @media screen and (min-width: 768px) {
-        background-image: url('/images/advantages/icon1.png');
-      }
+    &:nth-child(1)::before {
+      background-image: url('/images/icon1.png');
     }
 
-    &:nth-child(2):before {
-      background-image: url('/images/advantages/icon2_mobi.png');
-
-      @media screen and (min-width: 768px) {
-        background-image: url('/images/advantages/icon2.png');
-      }
+    &:nth-child(2)::before {
+      background-image: url('/images/icon2.png');
     }
 
-    &:nth-child(3):before {
-      background-image: url('/images/advantages/icon3_mobi.png');
-
-      @media screen and (min-width: 768px) {
-        background-image: url('/images/advantages/icon3.png');
-      }
+    &:nth-child(3)::before {
+      background-image: url('/images/icon3.png');
     }
   }
+
   &__item:not(:last-child) {
     margin-bottom: 38px;
+
     @media screen and (min-width: 768px) {
       margin-right: 60px;
       margin-bottom: 0;
@@ -76,6 +68,7 @@
       font-size: 48px;
       line-height: 55px;
     }
+
     @media screen and (min-width: 1200px) {
       font-size: 58px;
       line-height: 66px;
