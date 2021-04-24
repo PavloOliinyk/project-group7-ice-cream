@@ -25,6 +25,14 @@
             justify-content: center;
             margin-top: 54px;
 		}
+
+        & .button {
+            margin: 5px;
+            padding: 14px 32px 14px 32px;
+            &--red {
+                padding: 14px 17px 14px 17px;
+            }
+        }
 }
 
 .retail-card {
@@ -139,15 +147,6 @@
 		}
 }
 
-.button {
-    margin: 5px;
-    padding: 14px 32px 14px 32px;
-
-        &--red {
-            padding: 14px 17px 14px 17px;
-        }
-}
-
 @media screen and (min-width: 768px) {
 
     .contacts {
@@ -160,6 +159,10 @@
 
             &__button {
                 margin-top: 80px;
+            }
+
+            & .button {
+                margin: 7px;
             }
     }
 
@@ -231,11 +234,7 @@
             &__time {
                 font-size: 14px;
             }
-    }
-
-    .button {
-        margin: 7px;
-    }
+    }    
 }
 
 @media screen and (min-width: 1200px) {
@@ -265,7 +264,11 @@
             }
 
             &__button {
-            margin-top: 86px;
+                margin-top: 86px;
+            }
+
+            & .button {
+                margin: 8px;
             }
     }
 
@@ -320,9 +323,5 @@
             &__time {
                 font-size: 16px;
             }
-    }
-
-    .button {
-        margin: 8px;
-    }
+    }    
 }
