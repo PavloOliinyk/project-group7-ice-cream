@@ -1,0 +1,327 @@
+.contacts {
+    background-image: linear-gradient(to bottom, #FFFFFF 6%, #FFF5F6 6%);
+
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: -10px -10px -10px -10px;
+		}
+
+		&__item {
+            flex-basis: calc(100% - 20px);
+            margin: 10px 10px 10px 10px;
+            max-width: 220px;
+            height: auto;
+            padding: 40px 20px 40px 20px;
+            background-color: var(--primaryTextColor);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            border-radius: 24px;
+		}
+
+		&__button {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 54px;
+		}
+
+        & .button {
+            margin: 5px;
+            padding: 14px 32px 14px 32px;
+            &--red {
+                padding: 14px 17px 14px 17px;
+            }
+        }
+}
+
+.retail-card {
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item:nth-child(2)::after {
+            content: "";
+            width: 179px;
+            height: 0;
+            margin-top: 25px;
+            border: 1px solid #E1E1E1;
+        }
+
+        &__item:nth-child(3)::after {
+            content: "";
+            width: 179px;
+            height: 0;
+            margin-top: 25px;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+		&__item:not(:last-child) {
+            margin-bottom: 25px;
+        }
+}
+
+.item {
+
+		&__name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--primaryTextColor);
+            border-radius: 6px;
+            &--first {
+                width: 80px;
+                height: 16px;
+                background-color: #F0D1A5;
+            }
+            &--second {
+                width: 130px;
+                height: 16px;
+                background-color: #C2E297;
+            }
+            &--third {
+                width: 80px;
+                height: 16px;
+                background-color: #F0D1A5;
+            }
+		}
+
+		&__location {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+            color:var(--secondaryTextColor);
+		}
+
+		&__description {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.5;
+            color: var(--descriptionColor);
+		}
+
+		&__workday:nth-child(2) {
+            margin-top: 10px;
+		}
+
+		&__tel {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.5;
+            color: var(--descriptionColor);
+		}
+
+		&__mail {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.5;
+            color: var(--descriptionColor);
+		}
+}
+
+.working {
+
+		&__day {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+            color: var(--secondaryTextColor);
+		}
+
+		&__time {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+            color: var(--informationColor);
+		}
+}
+
+@media screen and (min-width: 768px) {
+
+    .contacts {
+        background-image: linear-gradient(to bottom, #FFFFFF 12%, #FFF5F6 12%);
+
+            &__item {
+                flex-basis: calc(100% / 3 - 20px);
+                padding: 50px 30px 50px 30px;
+            }
+
+            &__button {
+                margin-top: 80px;
+            }
+
+            & .button {
+                margin: 7px;
+            }
+    }
+
+    .retail-card {
+        
+            &__item:nth-child(2)::after {
+                width: 157px;
+                margin-top: 30px;
+            }
+
+            &__item:nth-child(3)::after {
+                width: 157px;
+                margin-top: 30px;
+            }
+
+            &__item:not(:last-child) {
+                margin-bottom: 30px;
+            }
+    }
+
+    .item {
+            &__name {
+                font-size: 16px;
+                &--first {
+                    width: 73px;
+                    height: 28px;
+                }
+                &--second {
+                    width: 138px;
+                    height: 28px;
+                }
+                &--third {
+                    width: 73px;
+                    height: 28px;
+                }
+            }
+
+            &__location {
+                font-size: 14px;
+            }
+
+            &__description {
+                margin-top: 14px;
+                font-size: 14px;
+                line-height: 1.66;
+            }
+
+            &__workday:nth-child(2) {
+                margin-top: 16px;
+            }
+
+            &__tel {
+                font-size: 14px;
+                line-height: 1.83;
+            }
+
+            &__mail {
+                font-size: 14px;
+                line-height: 1.83;
+            }
+    }
+
+    .working {
+
+            &__day {
+                font-size: 14px;
+            }
+
+            &__time {
+                font-size: 14px;
+            }
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .contacts {
+        background-image: url(../images/desktop/drops.png), linear-gradient(to bottom, #FFFFFF 18%, #FFF5F6 18%);
+        background-position:50% 33%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @media screen and (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: url(../images/desktop/drops@2x.png), linear-gradient(to bottom, #FFFFFF 18%, #FFF5F6 18%);
+            }
+
+            &__list {
+                margin: -15px -15px -15px -15px;
+            }
+
+            &__item {
+                flex-basis: calc(100% / 3 - 30px);
+                max-width: 330px;
+                margin: 15px 15px 15px 15px;
+                padding: 55px 40px 55px 40px;
+            }
+
+            &__button {
+                margin-top: 86px;
+            }
+
+            & .button {
+                margin: 8px;
+            }
+    }
+
+    .retail-card {
+
+            &__item:nth-child(2)::after {
+                width: 234px;
+                margin-top: 32px;
+            }
+
+            &__item:nth-child(3)::after {
+                width: 234px;
+                margin-top: 32px;
+            }
+
+            &__item:not(:last-child) {
+                margin-bottom: 32px;
+            }
+    }
+
+    .item{
+
+            &__location {
+                font-size: 16px;
+            }
+
+            &__description {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 1.83;
+            }
+
+            &__workday:nth-child(2) {
+                margin-top: 15px;
+            }
+
+            &__tel {
+                font-size: 16px;
+            }
+
+            &__mail {
+                font-size: 16px;
+            }
+    }
+
+    .working {
+
+            &__day {
+                font-size: 16px;
+            }
+
+            &__time {
+                font-size: 16px;
+            }
+    }    
+}
