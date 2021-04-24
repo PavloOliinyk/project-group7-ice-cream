@@ -28,6 +28,8 @@
   &__description {
     position: relative;
 
+    z-index: 100;
+
     padding: 0 9px;
 
     font-weight: 500;
@@ -47,18 +49,18 @@
     &::before {
       position: absolute;
 
+      z-index: 50;
+
       content: '';
-      background-image: url(../images/quotes.svg);
-      color: #e1e1e1;
+      background-image: url(../images/quotes.png);
+      // opacity: 0.6;
+
+      // background-color: rgb(225, 225, 225);
 
       width: 54px;
       height: 40px;
-      top: -18px;
-      left: 4px;
-
-      @media screen and (min-width: 1200px) {
-        top: -15px;
-      }
+      top: -15px;
+      left: 11px;
     }
   }
 
