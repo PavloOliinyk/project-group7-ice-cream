@@ -1,10 +1,37 @@
-<section>
+<section class="customer-reviews">
   <h2 class="title visually-hidden">Customer reviews</h2>
+  <div class="container">
+    <img class="customer-reviews__image" src="./images/review-author.png" alt="review-author" />
+    <div class="customer-reviews__wrapper">
+      <p class="customer-reviews__description">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+      </p>
+    </div>
 
-  <p class="customer-reviews_description">
-    Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla
-    quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-  </p>
-
-  <p>Emily, Los Angeles</p>
+    <p class="customer-reviews__author">Emily, Los Angeles</p>
+    <ul class="list customer-reviews__list">
+      <li class="customer-reviews__item">
+        <button type="button" class="customer-reviews__button customer-reviews__button--active">
+          <svg class="customer-reviews__icon" width="13px" height="12px">
+            <use href="./images/sprite/symbol-defs.svg#home"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="customer-reviews__item">
+        <button type="button" class="customer-reviews__button">
+          <svg class="customer-reviews__icon" width="12px" height="12px">
+            <use href="./images/sprite/symbol-defs.svg#dot"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="customer-reviews__item">
+        <button type="button" class="customer-reviews__button">
+          <svg class="customer-reviews__icon" width="12px" height="12px">
+            <use href="./images/sprite/symbol-defs.svg#dot"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
 </section>
