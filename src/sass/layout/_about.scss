@@ -1,0 +1,218 @@
+@media screen and (max-width: 767px) {
+  .box-about {
+    background: #fff5f6;
+    background-image: url('../images/mobile/bg-milk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 90%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .box-about__suptitle {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--informationColor);
+    padding-top: 125px;
+    margin-bottom: 15px;
+  }
+
+  .box-about__title {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accentColor);
+    margin-bottom: 26px;
+  }
+
+  .box-about__bg-bossy {
+    background-image: url('../images/mobile/bg-bossy.png');
+    width: 280px;
+    height: 280px;
+    margin-bottom: 46px;
+  }
+
+  .box-about__main-text {
+    // font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: var(--secondaryTextColor);
+    width: 220px;
+
+    margin: 0 auto;
+  }
+
+  .box-about__details-text {
+    // font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: var(--descriptionColor);
+    width: 220px;
+
+    margin: 0 auto;
+    margin-top: 47px;
+    margin-bottom: 47px;
+  }
+
+  .box-about__button {
+    // font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 37px;
+    margin-bottom: 39px;
+
+    color: var(--accentColor);
+    width: 176px;
+    height: 44px;
+    margin-left: 32px;
+
+    background: var(--primaryTextColor);
+    border-radius: 22px;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background: #ecebeb;
+    }
+
+    .box-about__btn-svg {
+      width: 9.8px;
+      height: 12px;
+      margin-left: 14px;
+    }
+  }
+}
+
+// ==========TABLET==========
+
+@media screen and (min-width: 768px) {
+  .box-about {
+    background: #fff5f6;
+  }
+
+  .box-about__suptitle {
+    font-size: 26px;
+    line-height: 1.15;
+    padding-top: 130px;
+    margin-bottom: 16px;
+  }
+
+  .box-about__title {
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 0;
+  }
+
+  .box-about__content {
+    display: flex;
+  }
+
+  .box-about__information {
+    margin-left: 17px;
+  }
+
+  .box-about__bg-bossy {
+    background-image: url('../images/tablet/bg-bossy.png');
+    width: 340px;
+    height: 340px;
+    margin-top: 50px;
+  }
+
+  .box-about__main-text {
+    font-size: 14px;
+    line-height: 176%;
+    margin-top: 100px;
+    width: 340px;
+  }
+
+  .box-about__details-text {
+    font-size: 14px;
+    line-height: 176%;
+    margin-top: 49px;
+    margin-bottom: 62px;
+    width: 340px;
+  }
+
+  .box-about__button {
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 0px;
+    margin-bottom: 66px;
+  }
+}
+
+// =================DESCTOP==================
+
+@media screen and (min-width: 1200px) {
+  .box-about {
+    background: #fff5f6;
+    background-image: url('../images/desktop/bg-milk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 100%;
+  }
+
+  .box-about__suptitle {
+    font-size: 30px;
+    line-height: 34px;
+    padding-top: 125px;
+    margin-bottom: 15px;
+  }
+
+  .box-about__title {
+    font-size: 58px;
+    line-height: 66px;
+  }
+
+  .box-about__bg-bossy {
+    background-image: url('../images/desktop/bg-bossy.png');
+    width: 516px;
+    height: 516px;
+    margin-top: 55px;
+  }
+
+  .box-about__information {
+    margin-left: 0px;
+  }
+
+  .box-about__main-text {
+    font-size: 16px;
+    line-height: 176%;
+    width: 460px;
+    margin-left: 60px;
+    margin-right: 0;
+  }
+
+  .box-about__details-text {
+    font-size: 14px;
+    line-height: 194%;
+    width: 460px;
+    margin-left: 60px;
+    margin-bottom: 45px;
+  }
+
+  .box-about__button {
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 60px;
+  }
+}
