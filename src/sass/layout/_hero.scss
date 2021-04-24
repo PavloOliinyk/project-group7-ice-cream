@@ -91,6 +91,13 @@
   line-height: 1.25px;
   color: #d41443;
   border-radius: 20px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__btn-list-link {
@@ -107,6 +114,12 @@
 .hero__btn-list-link_accent {
   background-color: var(--accentColor);
   color: #fff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 }
 .hero__img-center {
   position: absolute;
@@ -114,8 +127,14 @@
   right: 32px;
 
   animation-name: appearance;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__img-center {
@@ -138,6 +157,10 @@
   height: 344px;
   border-radius: 50%;
   background-color: #ffa5ba;
+
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .hero__ellipse {
@@ -205,6 +228,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__btn {
@@ -216,24 +247,24 @@
   height: 8px;
   fill: var(--accentColor);
 }
-.stat-list {
+.hero__stat-list {
   position: absolute;
   top: 96px;
   right: 44px;
 }
 @media screen and (min-width: 1200px) {
-  .stat-list {
+  .hero__stat-list {
     top: 156px;
     right: 90px;
   }
 }
-.stat-list__item {
+.hero__stat-list-item {
   position: relative;
 }
-.stat-list__item:not(:last-child) {
+.hero__stat-list-item:not(:last-child) {
   margin-bottom: 13px;
 }
-.stat-list__item::before {
+.hero__stat-list-item::before {
   position: absolute;
   top: 0;
   right: -10px;
@@ -246,12 +277,12 @@
   z-index: 0;
 }
 @media screen and (min-width: 1200px) {
-  .stat-list__item::before {
+  .hero__stat-list-item::before {
     width: 30px;
     height: 30px;
   }
 }
-.stat-list__accent-text {
+.hero__stat-list-accent-text {
   font-family: var(--secondaryFont);
   font-weight: 400;
   font-size: 28px;
@@ -263,17 +294,17 @@
   position: relative;
   z-index: 2;
 }
-.stat-list__text {
+.hero__stat-list-text {
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
   color: #ffffff;
 }
 @media screen and (min-width: 1200px) {
-  .stat-list__accent-text {
+  .hero__stat-list-accent-text {
     font-size: 46px;
   }
-  .stat-list__text {
+  .hero__stat-list-text {
     font-size: 14px;
     line-height: 1.29;
   }
@@ -296,7 +327,7 @@
   .hero__text-wrapper {
     display: none;
   }
-  .stat-list {
+  .hero__stat-list {
     display: none;
   }
   .hero__img-left {
@@ -313,5 +344,13 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(1);
   }
 }
