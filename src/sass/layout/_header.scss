@@ -39,7 +39,7 @@
     z-index: 5;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .burger-btn {
     display: none;
   }
@@ -82,7 +82,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .modal-btn {
     margin-left: auto;
   }
@@ -94,7 +94,7 @@
 .nav-list {
   display: flex;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .nav-list {
     display: none;
   }
@@ -103,9 +103,15 @@
   margin-right: 35px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .logo {
-    margin-right: 85px;
+    // margin-right: 100px;
+    position: absolute;
+    top: 34px;
+    left: 46px;
+  }
+  .nav-list {
+    padding-left: 235px;
   }
 }
 .nav-list__link {

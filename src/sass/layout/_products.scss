@@ -1,9 +1,10 @@
 .products {
-  padding: 120px 20px 100px 20px;
+  padding: 120px 0 100px;
 
   &__subtitle {
     margin-bottom: 15px;
 
+    font-family: var(--secondaryFont);
     text-align: center;
     text-transform: uppercase;
 
@@ -13,6 +14,7 @@
   &__title {
     margin-bottom: 15px;
 
+    font-family: var(--secondaryFont);
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -27,6 +29,7 @@
   &__title {
     position: relative;
 
+    font-family: var(--secondaryFont);
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -213,8 +216,9 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .products {
+    padding: 127px 0 119px;
     &__subtitle {
       font-size: 30px;
       line-height: 1.13;
