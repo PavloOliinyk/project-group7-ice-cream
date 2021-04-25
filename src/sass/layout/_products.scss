@@ -265,40 +265,41 @@
     }
   }
 }
-// .products-list__overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 80%;
-//   padding: 40px 20px;
+.products-list__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 15px;
 
-//   visibility: hidden;
+  visibility: hidden;
+  overflow: auto;
 
-//   font-size: 18px;
-//   line-height: 1.55;
-//   letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
 
-//   border-radius: 24px;
-//   border: 1px solid var(--accentColor);
-//   background-color: var(--primaryTextColor);
-//   color: var(--accentColor);
+  border-radius: 24px;
+  border: 1px solid var(--accentColor);
+  background-color: var(--primaryTextColor);
+  color: var(--accentColor);
 
-//   transform: translateX(100%);
-//   transition: transform 250ms linear;
+  transform: translateX(100%);
+  transition: transform 250ms linear;
 
-//   &.is-hidden {
-//     transform: translateX(0%);
-//     transition: transform 250ms linear;
-//   }
-// }
-//
-// .is-hidden {
-//   opacity: 1;
-//   visibility: visible;
-//   pointer-events: none;
+  &.is-hidden {
+    transform: translateX(0%);
+    transition: transform 250ms linear;
+  }
+}
 
-//   animation-name: skaleModal;
-//   animation-duration: 0.5s;
-//   animation-timing-function: linear;
-//   transform-origin: center center;
-// }
+.is-hidden {
+  opacity: 1;
+  visibility: visible;
+
+  animation-name: skaleModal;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  transform-origin: center center;
+}
