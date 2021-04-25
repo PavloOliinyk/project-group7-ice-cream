@@ -1,5 +1,6 @@
 .products {
-  padding: 120px 0 100px;
+  padding-top: 120px;
+  padding-bottom: 98px;
 
   &__subtitle {
     margin-bottom: 15px;
@@ -139,10 +140,10 @@
     }
 
     &__description {
-      padding-top: 30px;
+      margin-top: 30px;
 
       font-size: 14px;
-      line-height: 1.15;
+      line-height: 1.52;
     }
 
     &__btn {
@@ -151,7 +152,7 @@
   }
   .products-list__item {
     margin-top: 130px;
-    padding: 160px 40px 40px 40px;
+    padding: 160px 42px 40px;
 
     &::before {
       width: 250px;
@@ -162,14 +163,16 @@
 
 @media screen and (min-width: 768px) {
   .products {
+    padding-top: 122px;
+    padding-bottom: 112px;
     &__subtitle {
       font-size: 26px;
-      line-height: 38px;
+      line-height: 1.46;
     }
     &__title {
-      padding-top: 30px;
       font-size: 48px;
       line-height: 1.15;
+      margin-bottom: 39px;
     }
   }
   .products-list {
@@ -226,6 +229,7 @@
     &__title {
       font-size: 58px;
       line-height: 1.13;
+      margin-bottom: 49px;
     }
   }
   .products-list {

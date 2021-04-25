@@ -3,7 +3,11 @@
   padding: 39px 0 48px;
 
   @media screen and (min-width: 768px) {
-    padding: 60px 0;
+    padding: 66px 0 70px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 39px 0 69px;
   }
 
   &__list {
@@ -58,17 +62,17 @@
     font-family: var(--secondaryFont);
     font-weight: 400;
     font-size: 36px;
-    line-height: 41px;
+    line-height: 1.14;
     color: #d41443;
 
     @media screen and (min-width: 768px) {
       font-size: 48px;
-      line-height: 55px;
+      line-height: 1.15;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 58px;
-      line-height: 66px;
+      line-height: 1.14;
     }
   }
 
@@ -82,11 +86,11 @@
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
-      line-height: 174%;
+      line-height: 1.74;
     }
     @media screen and (min-width: 1200px) {
       font-size: 16px;
-      line-height: 176%;
+      line-height: 1.76;
     }
   }
 }
