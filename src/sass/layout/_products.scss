@@ -1,5 +1,6 @@
 .products {
-  padding: 120px 20px 100px 20px;
+  padding-top: 120px;
+  padding-bottom: 98px;
 
   &__subtitle {
     margin-bottom: 15px;
@@ -218,8 +219,7 @@
 
 @media screen and (min-width: 1280px) {
   .products {
-    padding-top: 127px;
-    padding-bottom: 119px;
+    padding: 127px 0 119px;
     &__subtitle {
       font-size: 30px;
       line-height: 1.13;
