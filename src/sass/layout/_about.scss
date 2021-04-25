@@ -1,11 +1,14 @@
 @media screen and (max-width: 767px) {
-  .box-about {
-    padding-top: 125px;
-    background: #fff5f6;
+  .box-about .container {
     background-image: url('../images/mobile/bg-milk.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0 90%;
+    background-position: left bottom 67px;
+  }
+
+  .box-about {
+    padding-top: 125px;
+    background: #fff5f6;
   }
 }
 
@@ -129,6 +132,7 @@
     background-image: url('../images/tablet/bg-bossy.png');
     width: 340px;
     height: 340px;
+    margin-right: 17px;
     margin-bottom: 0;
   }
 
@@ -148,7 +152,6 @@
     font-size: 16px;
     line-height: 1.31;
     margin-left: 0px;
-    margin-bottom: 66px;
   }
 }
 
@@ -158,10 +161,13 @@
   .box-about {
     padding-top: 125px;
     background: #fff5f6;
-    background-image: url('../images/desktop/bg-milk.png');
+  }
+
+  .box-about .container {
+    background-image: url('../images/mobile/bg-milk.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0 120%;
+    background-position: left top 217px;
   }
 
   .box-about__suptitle {
@@ -179,6 +185,7 @@
   .box-about__bg-bossy {
     background-image: url('../images/desktop/bg-bossy.png');
     background-size: contain;
+    margin: 0;
     width: 516px;
     height: 516px;
   }
@@ -207,5 +214,6 @@
     font-size: 16px;
     line-height: 1.31;
     margin-left: 74px;
+    margin-bottom: 0;
   }
 }

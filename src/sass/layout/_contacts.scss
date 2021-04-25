@@ -177,7 +177,7 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
-    background-image: linear-gradient(to bottom, #ffffff 12%, #fff5f6 12%);
+    background-image: linear-gradient(to bottom, #ffffff 17%, #fff5f6 17%);
     padding-top: 60px;
     padding-bottom: 78px;
 
@@ -269,9 +269,9 @@
   .contacts {
     padding-top: 66px;
     padding-bottom: 85px;
+    background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
     & .container {
-      background-image: url(../images/desktop/drops.png),
-        linear-gradient(to bottom, #ffffff 18%, #fff5f6 18%);
+      background-image: url(../images/desktop/drops.png);
       background-position: 50% 33%;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -280,8 +280,7 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../images/desktop/drops@2x.png),
-          linear-gradient(to bottom, #ffffff 18%, #fff5f6 18%);
+        background-image: url(../images/desktop/drops@2x.png);
       }
     }
 
