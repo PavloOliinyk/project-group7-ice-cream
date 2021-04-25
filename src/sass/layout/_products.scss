@@ -218,7 +218,8 @@
 
 @media screen and (min-width: 1280px) {
   .products {
-    padding: 127px 0 119px;
+    padding-top: 127px;
+    padding-bottom: 119px;
     &__subtitle {
       font-size: 30px;
       line-height: 1.13;
