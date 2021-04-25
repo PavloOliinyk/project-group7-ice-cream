@@ -39,7 +39,7 @@
     background-image: url('../images/mobile/bg-bossy.png');
     width: 280px;
     height: 280px;
-    margin-bottom: 46px;
+    // margin-bottom: 46px;
   }
 
   .box-about__main-text {
@@ -168,7 +168,7 @@
     background-image: url('../images/desktop/bg-milk.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0 100%;
+    background-position: 0 120%;
   }
 
   .box-about__suptitle {
@@ -185,6 +185,7 @@
 
   .box-about__bg-bossy {
     background-image: url('../images/desktop/bg-bossy.png');
+    background-size: contain;
     width: 516px;
     height: 516px;
     margin-top: 55px;
@@ -197,22 +198,23 @@
   .box-about__main-text {
     font-size: 16px;
     line-height: 176%;
-    width: 450px;
-    margin-left: 50px;
+    width: 463px;
+    margin-left: 74px;
     margin-right: 0;
   }
 
   .box-about__details-text {
     font-size: 14px;
     line-height: 194%;
-    width: 450px;
-    margin-left: 50px;
+    width: 463px;
+    margin-top: 35px;
+    margin-left: 74px;
     margin-bottom: 45px;
   }
 
   .box-about__button {
     font-size: 16px;
     line-height: 21px;
-    margin-left: 60px;
+    margin-left: 74px;
   }
 }
