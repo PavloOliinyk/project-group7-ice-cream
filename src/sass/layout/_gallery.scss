@@ -3,10 +3,14 @@
   padding: 49px 0 40px;
 
   @media screen and (min-width: 768px) {
+    padding: 70px 0 60px;
+
     background: linear-gradient(to bottom, #fff5f6 44%, #fff 44%);
   }
 
   @media screen and (min-width: 1280px) {
+    padding-bottom: 63px;
+
     background: linear-gradient(to bottom, #fff5f6 42.5%, #fff 42.5%);
   }
 
