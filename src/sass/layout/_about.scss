@@ -78,7 +78,7 @@
     align-items: center;
     text-align: center;
     padding-left: 37px;
-    margin-bottom: 39px;
+    // margin-bottom: 39px;
 
     color: var(--accentColor);
     width: 176px;
@@ -162,7 +162,7 @@
 
 // =================DESCTOP==================
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .box-about {
     background: #fff5f6;
     background-image: url('../images/desktop/bg-milk.png');
