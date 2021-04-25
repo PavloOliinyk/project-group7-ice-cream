@@ -1,6 +1,10 @@
 .gallery {
   background: linear-gradient(to bottom, #fff5f6 42%, #fff 42%);
-  padding: 50px 0;
+  padding: 69px 0 63px;
+
+  & .container {
+    padding: 0;
+  }
 
   &__block {
     margin: 0 auto;
