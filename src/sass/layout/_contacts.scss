@@ -1,38 +1,66 @@
 .contacts {
-  padding-top: 66px;
+  padding-top: 52px;
 
   background-image: linear-gradient(to bottom, #ffffff 6%, #fff5f6 6%);
 
+  & .container {
+    @media screen and (max-width: 767px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: -10px -10px -10px -10px;
+    margin-bottom: 54px;
   }
 
   &__item {
-    flex-basis: calc(100% - 20px);
-    margin: 10px 10px 10px 10px;
-    max-width: 220px;
-    height: auto;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px;
     background-color: var(--primaryTextColor);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
   }
 
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
   &__button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 54px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   & .button {
-    margin: 5px;
-    padding: 14px 32px 14px 32px;
+    padding: 14px 0;
+    min-width: 162px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 15px;
+      min-width: 174px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      min-width: 180px;
+    }
+
     &--red {
-      padding: 14px 17px 14px 17px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-right: 15px;
+        min-width: 192px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        min-width: 198px;
+      }
     }
   }
 }
@@ -150,17 +178,18 @@
   .contacts {
     background-image: linear-gradient(to bottom, #ffffff 12%, #fff5f6 12%);
 
+    &__list {
+      display: flex;
+      margin-top: -20px;
+      margin-left: -20px;
+      margin-bottom: 81px;
+    }
+
     &__item {
-      flex-basis: calc(100% / 3 - 20px);
-      padding: 50px 30px 50px 30px;
-    }
-
-    &__button {
-      margin-top: 80px;
-    }
-
-    & .button {
-      margin: 7px;
+      flex-basis: calc(100% - 20px);
+      margin-top: 20px;
+      margin-left: 20px;
+      padding: 50px 30px;
     }
   }
 
@@ -252,22 +281,16 @@
     }
 
     &__list {
-      margin: -15px -15px -15px -15px;
+      margin-top: -30px;
+      margin-left: -30px;
+      margin-bottom: 86px;
     }
 
     &__item {
       flex-basis: calc(100% / 3 - 30px);
-      max-width: 330px;
-      margin: 15px 15px 15px 15px;
-      padding: 55px 40px 55px 40px;
-    }
-
-    &__button {
-      margin-top: 86px;
-    }
-
-    & .button {
-      margin: 8px;
+      margin-top: 30px;
+      margin-left: 30px;
+      padding: 55px 40px;
     }
   }
 
