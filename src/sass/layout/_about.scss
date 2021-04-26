@@ -1,9 +1,11 @@
 @media screen and (max-width: 767px) {
-  .box-about .container {
+  .box-about__overlay {
     background-image: url('../images/mobile/bg-milk.png');
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
+    background-position: center bottom 10%;
     background-size: contain;
-    background-position: left bottom 67px;
   }
 
   .box-about {
@@ -40,13 +42,6 @@
     text-transform: uppercase;
     color: var(--accentColor);
     margin-bottom: 26px;
-  }
-
-  .box-about__bg-bossy {
-    margin-bottom: 46px;
-    background-image: url('../images/mobile/bg-bossy.png');
-    width: 280px;
-    height: 280px;
   }
 
   .box-about__main-text {
@@ -165,11 +160,11 @@
     background: #fff5f6;
   }
 
-  .box-about .container {
+  .box-about__overlay {
     background-image: url('../images/mobile/bg-milk.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left top 217px;
+    background-position: center bottom -41%;
   }
 
   .box-about__suptitle {
