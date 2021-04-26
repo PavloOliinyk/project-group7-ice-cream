@@ -113,6 +113,8 @@
   opacity: 0;
   transition: opacity 250ms linear, filter 250ms linear;
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
     filter: brightness(1.5);
