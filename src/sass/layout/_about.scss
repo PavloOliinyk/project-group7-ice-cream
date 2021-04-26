@@ -1,12 +1,43 @@
 @media screen and (max-width: 767px) {
+  .box-about__bg-bossy {
+    background-image: url('../images/mobile/bg-bossy.png');
+    width: 280px;
+    height: 280px;
+    align-items: center;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__bg-bossy {
+      background-image: url('../images/mobile/bg-bossy@2x.png');
+      align-items: center;
+    }
+  }
+
   .box-about__overlay {
     background-image: url('../images/mobile/bg-milk.png');
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
-    background-position: center bottom 10%;
+    background-position: center bottom 8%;
     background-size: contain;
     max-width: 320px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__overlay {
+      background-image: url('../images/mobile/bg-milk@2x.png');
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      background-position: center bottom 8%;
+      background-size: contain;
+    }
   }
 
   .box-about {
@@ -50,6 +81,7 @@
     font-size: 12px;
     line-height: 1.62;
     color: var(--secondaryTextColor);
+    margin-top: 46px;
   }
 
   .box-about__details-text {
@@ -122,7 +154,7 @@
 
   .box-about__information {
     margin: 0;
-    padding: 50px 0 0;
+    padding: 0 0 0;
   }
 
   .box-about__bg-bossy {
@@ -132,6 +164,18 @@
     height: 340px;
     margin-right: 17px;
     margin-bottom: 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__bg-bossy {
+      flex-shrink: 0;
+      background-image: url('../images/tablet/bg-bossy@2x.png');
+      margin-right: 17px;
+      margin-bottom: 0;
+    }
   }
 
   .box-about__main-text {
@@ -163,11 +207,24 @@
 
   .box-about__overlay {
     margin: 0 auto;
+
     background-image: url('../images/desktop/bg-milk.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom -41%;
     max-width: 1280px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__overlay {
+      background-image: url('../images/desktop/bg-milk@2x.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center bottom -41%;
+    }
   }
 
   .box-about__suptitle {
@@ -188,6 +245,17 @@
     margin: 0;
     width: 516px;
     height: 516px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__bg-bossy {
+      background-image: url('../images/desktop/bg-bossy@2x.png');
+      background-size: contain;
+      margin: 0;
+    }
   }
 
   .box-about__information {
