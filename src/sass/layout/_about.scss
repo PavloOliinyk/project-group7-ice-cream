@@ -3,6 +3,7 @@
     background-image: url('../images/mobile/bg-bossy.png');
     width: 280px;
     height: 280px;
+    background-size: contain;
     align-items: center;
   }
 
@@ -160,6 +161,7 @@
   .box-about__bg-bossy {
     flex-shrink: 0;
     background-image: url('../images/tablet/bg-bossy.png');
+    background-size: contain;
     width: 340px;
     height: 340px;
     margin-right: 17px;
