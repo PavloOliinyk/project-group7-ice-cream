@@ -85,6 +85,8 @@
     border-radius: 22px;
     border: none;
 
+    transition: background 250ms linear;
+
     &:hover,
     &:focus {
       background: #ecebeb;
