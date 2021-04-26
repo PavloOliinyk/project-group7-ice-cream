@@ -41,6 +41,8 @@
   border-radius: 50%;
   cursor: pointer;
 
+  transition: transform 250ms linear;
+
   &:nth-child(1) {
     margin-left: 0;
   }
@@ -50,6 +52,7 @@
   &:hover,
   &:focus {
     background-color: var(--accentColor);
+    transform: scale(1.2);
   }
 }
 .footer__link {
