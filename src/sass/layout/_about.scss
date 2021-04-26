@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center bottom 10%;
     background-size: contain;
+    max-width: 320px;
   }
 
   .box-about {
@@ -161,10 +162,12 @@
   }
 
   .box-about__overlay {
-    background-image: url('../images/mobile/bg-milk.png');
+    margin: 0 auto;
+    background-image: url('../images/desktop/bg-milk.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom -41%;
+    max-width: 1280px;
   }
 
   .box-about__suptitle {
