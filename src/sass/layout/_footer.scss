@@ -205,4 +205,22 @@
   .footer__list {
     margin-bottom: 50px;
   }
+  #upDown {
+    width: 50px;
+    height: 50px;
+
+    &::before {
+      width: 5px;
+      height: 25px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    &::after {
+      top: 21px;
+      width: 15px;
+      height: 15px;
+      border-top: 5px solid var(--primaryTextColor);
+      border-left: 5px solid var(--primaryTextColor);
+    }
+  }
 }
