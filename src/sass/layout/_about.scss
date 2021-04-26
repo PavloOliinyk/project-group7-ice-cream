@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-position: center bottom 8%;
     background-size: contain;
+    max-width: 320px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -205,10 +206,13 @@
   }
 
   .box-about__overlay {
+    margin: 0 auto;
+
     background-image: url('../images/desktop/bg-milk.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom -41%;
+    max-width: 1280px;
   }
 
   @media (min-device-pixel-ratio: 2),
