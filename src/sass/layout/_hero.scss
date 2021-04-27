@@ -1,5 +1,7 @@
 .hero {
   background-color: #ffb8ca;
+  // position: relative;
+  // overflow-x: hidden;
 }
 .hero__container {
   padding-top: 193px;
@@ -154,8 +156,11 @@
   top: 83px;
   left: 36px;
 
-  width: 346px;
-  height: 344px;
+  // width: 346px;
+  // height: 344px;
+  width: 280px;
+  height: 278px;
+
   border-radius: 50%;
   background-color: #ffa5ba;
 
@@ -163,6 +168,7 @@
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (min-width: 768px) {
   .hero__ellipse {
     width: 324px;
@@ -236,7 +242,11 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    background-color: var(--accentColor);
   }
+}
+.hero__btn:hover .hero__btn-icon {
+  fill: #fff;
 }
 @media screen and (min-width: 1280px) {
   .hero__btn {
