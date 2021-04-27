@@ -110,6 +110,12 @@
     background-color: #ffb8ca;
     &::before {
       background-image: url(../images/mobile/mobile-icecream.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/mobile-icecream@2x.png);
+      }
     }
   }
 
@@ -117,12 +123,24 @@
     background-color: #f0d1a5;
     &::before {
       background-image: url(../images/mobile/mobile-icecoffee.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/mobile-icecoffee@2x.png);
+      }
     }
   }
   &.milkshakes {
     background-color: #c2e297;
     &::before {
       background-image: url(../images/mobile/mobile-milkshakes.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/mobile-milkshakes@2x.png);
+      }
     }
   }
 
@@ -130,6 +148,7 @@
     content: '';
     position: absolute;
     background-repeat: no-repeat;
+    background-size: cover;
 
     top: 0%;
 
@@ -221,16 +240,34 @@
     &.ice-cream {
       &::before {
         background-image: url(../images/tablet/tablet-icecream.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/tablet-icecream@2x.png);
+        }
       }
     }
     &.ice-coffee {
       &::before {
         background-image: url(../images/tablet/tablet-icecoffee.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/tablet-icecoffee@2x.png);
+        }
       }
     }
     &.milkshakes {
       &::before {
         background-image: url(../images/tablet/tablet-milkshakes.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/tablet-milkshakes@2x.png);
+        }
       }
     }
   }
@@ -276,16 +313,34 @@
     &.ice-cream {
       &::before {
         background-image: url(../images/desktop/desktop-icecream.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-icecream@2x.png);
+        }
       }
     }
     &.ice-coffee {
       &::before {
         background-image: url(../images/desktop/desktop-icecoffee.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-icecoffee@2x.png);
+        }
       }
     }
     &.milkshakes {
       &::before {
         background-image: url(../images/desktop/desktop-milkshakes.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-milkshakes@2x.png);
+        }
       }
     }
   }
@@ -314,18 +369,10 @@
   transition: transform 250ms linear;
 
   &.is-hidden {
+    opacity: 0.8;
+    visibility: visible;
+
     transform: translateY(0%);
+    transition: transform 250ms linear;
   }
-}
-
-.products-list__overlay.is-hidden {
-  opacity: 0.8;
-  visibility: visible;
-
-  animation-name: skaleModal;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  transform-origin: center center;
-
-  transition: transform 250ms linear;
 }
