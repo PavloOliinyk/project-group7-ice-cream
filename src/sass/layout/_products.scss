@@ -276,16 +276,34 @@
     &.ice-cream {
       &::before {
         background-image: url(../images/desktop/desktop-icecream.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-icecream@2x.png);
+        }
       }
     }
     &.ice-coffee {
       &::before {
         background-image: url(../images/desktop/desktop-icecoffee.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-icecoffee@2x.png);
+        }
       }
     }
     &.milkshakes {
       &::before {
         background-image: url(../images/desktop/desktop-milkshakes.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-milkshakes@2x.png);
+        }
       }
     }
   }
@@ -314,17 +332,10 @@
   transition: transform 250ms linear;
 
   &.is-hidden {
+    opacity: 0.8;
+    visibility: visible;
+
     transform: translateY(0%);
     transition: transform 250ms linear;
   }
-}
-
-.is-hidden {
-  opacity: 0.8;
-  visibility: visible;
-
-  animation-name: skaleModal;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  transform-origin: center center;
 }
