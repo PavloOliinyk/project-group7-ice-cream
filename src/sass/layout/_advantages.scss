@@ -52,14 +52,32 @@
 
     &:nth-child(1)::before {
       background-image: url('../images/icon1.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/icon1@2x.png');
+      }
     }
 
     &:nth-child(2)::before {
       background-image: url('../images/icon2.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/icon2@2x.png');
+      }
     }
 
     &:nth-child(3)::before {
       background-image: url('../images/icon3.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/icon3@2x.png');
+      }
     }
   }
 
