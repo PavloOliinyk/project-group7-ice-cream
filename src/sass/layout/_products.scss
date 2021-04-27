@@ -311,7 +311,7 @@
   color: var(--accentColor);
 
   transform: translateY(100%);
-  transition: transform 1000ms linear;
+  transition: transform 250ms linear;
 
   &.is-hidden {
     transform: translateY(0%);
