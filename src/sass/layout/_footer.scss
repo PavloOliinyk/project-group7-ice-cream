@@ -41,6 +41,8 @@
   border-radius: 50%;
   cursor: pointer;
 
+  transition: transform 250ms linear;
+
   &:nth-child(1) {
     margin-left: 0;
   }
@@ -50,6 +52,8 @@
   &:hover,
   &:focus {
     background-color: var(--accentColor);
+    animation: heartBeat;
+    animation-duration: 1000ms;
   }
 }
 .footer__link {
@@ -74,8 +78,14 @@
   color: var(--secondaryTextColor);
 }
 .footer__phone {
+  display: inline-block;
   text-decoration: none;
   color: var(--accentColor);
+
+  .footer__contact-text:hover & {
+    animation: tada;
+    animation-duration: 1000ms;
+  }
 }
 .footer__copyright {
   margin: auto;
@@ -97,6 +107,56 @@
     border: 1px solid #e1e1e1;
     width: 100%;
   }
+}
+#upDown {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: var(--accentColor);
+  opacity: 0;
+  transition: opacity 250ms linear, filter 250ms linear;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    filter: brightness(1.5);
+    outline: none;
+    animation: heartBeat;
+    animation-duration: 1000ms;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &::before {
+    width: 2px;
+    height: 12px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    background-color: var(--primaryTextColor);
+  }
+  &::after {
+    top: 11px;
+    width: 7px;
+    height: 7px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 2px solid var(--primaryTextColor);
+    border-left: 2px solid var(--primaryTextColor);
+  }
+}
+#upDown.show {
+  opacity: 1;
+  visibility: visible;
 }
 @media screen and (max-width: 767px) {
   .footer__contact-text {
@@ -158,5 +218,23 @@
   }
   .footer__list {
     margin-bottom: 50px;
+  }
+  #upDown {
+    width: 50px;
+    height: 50px;
+
+    &::before {
+      width: 5px;
+      height: 25px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    &::after {
+      top: 21px;
+      width: 15px;
+      height: 15px;
+      border-top: 5px solid var(--primaryTextColor);
+      border-left: 5px solid var(--primaryTextColor);
+    }
   }
 }

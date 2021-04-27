@@ -2,7 +2,7 @@
   padding-top: 52px;
   padding-bottom: 58px;
 
-  background-image: linear-gradient(to bottom, #ffffff 6%, #fff5f6 6%);
+  background-image: linear-gradient(to bottom, #ffffff 8%, #fff5f6 8%);
 
   & .container {
     @media screen and (max-width: 767px) {
@@ -18,8 +18,12 @@
   &__item {
     padding: 40px 20px;
     background-color: var(--primaryTextColor);
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    box-shadow: 0px 8px 20px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 35px rgba(212, 20, 67, 0.4);
+    }
   }
 
   &__item:not(:last-child) {
@@ -269,7 +273,7 @@
   .contacts {
     padding-top: 66px;
     padding-bottom: 85px;
-    background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
+    background-image: linear-gradient(to bottom, #ffffff 19.5%, #fff5f6 19.5%);
     & .container {
       background-image: url(../images/desktop/drops.png);
       background-position: 50% 33%;
