@@ -108,6 +108,12 @@
       top: -15px;
       left: 11px;
 
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/quotes@2x.png);
+      }
+
       @media screen and (min-width: 768px) {
         top: -18px;
         left: -23px;
