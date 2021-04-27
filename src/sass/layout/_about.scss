@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     background-position: center bottom 8%;
     background-size: contain;
-    max-width: 320px;
+    // max-width: 320px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -70,7 +70,7 @@
     z-index: 1000;
   }
 
-  .is-hidden {
+  .backdrope.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -215,10 +215,11 @@
 }
 
 // ==========TABLET==========
-// @media screen and (max-width: 1279px) {
-//   // .backdrop {
-//   //   display: none;
-//   // }
+@media screen and (max-width: 1279px) {
+  .backdrop {
+    display: none;
+  }
+}
 
 //   .backdrop {
 //     position: fixed;
@@ -390,7 +391,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom -41%;
-    max-width: 1280px;
+    // max-width: 1280px;
   }
 
   @media (min-device-pixel-ratio: 2),
