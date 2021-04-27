@@ -13,6 +13,7 @@
   }
 
   & .container {
+    position: relative;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -102,6 +103,7 @@
 
       content: '';
       background-image: url(../images/quotes.png);
+      background-size: contain;
 
       width: 54px;
       height: 40px;
@@ -129,12 +131,6 @@
   &__list {
     display: flex;
     justify-content: center;
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 18px;
-    }
   }
 
   &__author {
@@ -174,24 +170,39 @@
       }
     }
   }
+}
 
-  &__button {
-    padding: 0;
+.swiper-container {
+  width: 100%;
+}
 
-    border: none;
+.swiper-slide {
+  width: 100%;
+}
 
-    background-color: transparent;
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translate3d(0, 0, 0) translateX(-50%);
+}
 
-    color: #d9d9d9;
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
 
-    &--active {
-      color: #d31342;
-    }
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 18px;
+}
 
-    cursor: pointer;
-  }
-
-  &__icon {
-    fill: currentColor;
-  }
+.swiper-pagination-bullet-active {
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/home.svg);
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
 }
