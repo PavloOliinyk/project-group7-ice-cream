@@ -52,7 +52,8 @@
   &:hover,
   &:focus {
     background-color: var(--accentColor);
-    transform: scale(1.2);
+    animation: heartBeat;
+    animation-duration: 1000ms;
   }
 }
 .footer__link {
@@ -77,8 +78,14 @@
   color: var(--secondaryTextColor);
 }
 .footer__phone {
+  display: inline-block;
   text-decoration: none;
   color: var(--accentColor);
+
+  .footer__contact-text:hover & {
+    animation: tada;
+    animation-duration: 1000ms;
+  }
 }
 .footer__copyright {
   margin: auto;
@@ -119,6 +126,8 @@
   &:focus {
     filter: brightness(1.5);
     outline: none;
+    animation: heartBeat;
+    animation-duration: 1000ms;
   }
 
   &::before,
