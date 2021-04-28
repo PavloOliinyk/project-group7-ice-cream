@@ -382,7 +382,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 310px;
-    height: 550px;
+    height: 570px;
     border-radius: 4px;
     background-color: #c59191;
     padding: 40px;
@@ -494,6 +494,48 @@
       }
     }
   }
+  & .modal-form__ckbox-description {
+    // display: flex;
+    justify-content: center;
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #dd230f;
+    margin-top: 5px;
+  }
+  & .modal-form__contract-description {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: var(--accent-text-color);
+  }
+
+  & .modal-form__btn-submit {
+    width: 200px;
+    height: 28px;
+    background: #5c0c03;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    color: #d41443;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+  }
 }
 
 // .modal-form__input:focus + .modal-form__icon-email,
@@ -516,23 +558,6 @@
 //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 // }
 
-// .modal-form__ckbox-description {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-pack: center;
-//       -ms-flex-pack: center;
-//           justify-content: center;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 12px;
-//   line-height: 1.7;
-//   letter-spacing: 0.03em;
-//   color: #757575;
-//   margin-top: 20px;
-// }
-
 // .modal-form__ckbox-description::before {
 //   display: block;
 //   content: "";
@@ -549,37 +574,3 @@
 //           box-shadow: none;
 //   background-image: url("../images/icon-check.svg");
 // }
-
-// .modal-form__btn-submit {
-//   width: 200px;
-//   height: 50px;
-//   background: #188ce8;
-//   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border-radius: 4px;
-//   border: none;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 16px;
-//   line-height: 1.8;
-//   letter-spacing: 0.06em;
-//   color: var(--main-background-color);
-//   cursor: pointer;
-//   -ms-flex-item-align: center;
-//       -ms-grid-row-align: center;
-//       align-self: center;
-//   margin-top: 30px;
-//   margin-bottom: 40px;
-// }
-
-// .modal-form__contract-description {
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 12px;
-//   line-height: 1.16;
-//   letter-spacing: 0.03em;
-//   -webkit-text-decoration-line: underline;
-//           text-decoration-line: underline;
-//   color: var(--accent-text-color);
