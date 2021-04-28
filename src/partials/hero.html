@@ -109,3 +109,60 @@
     </ul>
   </div>
 </section>
+
+<!--BACKDROP BUYNOW-->
+<div class="backdrop-buynow is-hidden">
+  <div class="modal">
+
+    <button type="button" class="modal__close-btn">
+      <svg class="modal__icon-close-btn">
+          <use href="./images/icon/close-button.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <form action="#" class="modal-form" autocomplete="off">
+      <p class="modal-form__title" lang="en">Ordering form </br> Buier information</p>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">Name</span>
+        <span class="modal-form__span">
+          <input type="text" name="user-name" class="modal-form__input" required>
+          <!--<svg class="modal-form__icon-name">
+                            //<use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>-->
+        </span>
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">Phone</span>
+        <span class="modal-form__span">
+          <input type="tel" name="user-tel" class="modal-form__input" required title="096-111-11-11">
+          <!--<svg class="modal-form__icon-tel">
+                            //<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>-->
+        </span>
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">e-mail</span>
+        <span class="modal-form__span">
+          <input type="email" name="user-email" class="modal-form__input" required>
+          <!--<svg class="modal-form__icon-email">
+                            //<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>-->
+        </span>
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">Comments</span>
+        <textarea name="user-message" class="modal-form__message" placeholder="Введите текст"></textarea>
+      </label>
+      <input type="checkbox" name="user-checkbox" id="user-term" class="modal-form__checkbox visually-hidden">
+      <label for="user-term" class="modal-form__ckbox-description" lang="en">Agree with conditions&nbsp<a href=""
+          class="modal-form__contract-description" lang="en">Agree with conditions</a></label>
+      <button type="submit" class="modal-form__btn-submit">Отправить</button>
+
+    </form>
+
+  </div>
+</div>
