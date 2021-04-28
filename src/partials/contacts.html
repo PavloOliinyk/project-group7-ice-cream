@@ -82,7 +82,7 @@
       <button type="button" class="button button--red" data-location-modal-open>
         Our Locations &#62;
       </button>
-      <button type="button" class="button">Franchise &#62;</button>
+      <button type="button" class="button" data-franchise-btn-open>Franchise &#62;</button>
     </div>
     <div class="location-popup" data-location-popup>
       <div class="location-popup__body body">
@@ -102,18 +102,22 @@
         </iframe>
       </div>
     </div>
-    <div class="franchise-popup">
+    <div class="franchise-popup" data-franchise-modal>
       <div class="franchise-popup__body body">
-        <button class="body__close-button" type="button">
+        <button class="body__close-button" type="button" data-franchise-btn-close>
           <svg class="body__close-icon">
             <use href="./images/icons.svg#popup-close-btn"></use>
           </svg>
         </button>
         <form action="#" class="franchise-popup__form form" autocomplete="off">
-          <b class="form__text--title">Преимущества совместного сотрудничества при покупке франшизы:</b>
+          <b class="form__text--title"
+            >Преимущества совместного сотрудничества при покупке франшизы:</b
+          >
           <ul class="form__list">
             <li class="form__item">
-              <p class="form__text--subtitle">испытанная концепция, которая позволяет открыть собственный бизнес</p>
+              <p class="form__text--subtitle">
+                испытанная концепция, которая позволяет открыть собственный бизнес
+              </p>
             </li>
             <li class="form__item">
               <p class="form__text--subtitle">торговля высококачественным продуктом класса-люкс</p>
@@ -131,30 +135,47 @@
           <b class="form__text">Оставьте свои данные, мы вам перезвоним</b>
           <label class="form__field">
             Имя
-            <span class="form__input-wrapper"><input type="text" name="user-name" class="form__input" placeholder="Иван Иванов"
-                required />
+            <span class="form__input-wrapper"
+              ><input
+                type="text"
+                name="user-name"
+                class="form__input"
+                placeholder="Иван Иванов"
+                required
+              />
             </span>
           </label>
           <label class="form__field">
             Телефон
             <span class="form__input-wrapper">
-              <input type="tel" name="user-phone" class="form__input" placeholder="098-765-43-21"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="097-111-11-11" required />
+              <input
+                type="tel"
+                name="user-phone"
+                class="form__input"
+                placeholder="098-765-43-21"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="097-111-11-11"
+                required
+              />
             </span>
           </label>
           <label class="form__field">
             Почта
             <span class="form__input-wrapper">
-              <input type="email" name="user-email" class="form__input" placeholder="name@mail.com" required />
+              <input
+                type="email"
+                name="user-email"
+                class="form__input"
+                placeholder="name@mail.com"
+                required
+              />
             </span>
           </label>
           <label class="form__field">
             Комментарий
             <textarea name="comment" class="form__comment" placeholder="Введите текст"></textarea>
           </label>
-          <button class="button button--red" type="submit">
-            Отправить
-          </button>
+          <button class="button button--red" type="submit">Отправить</button>
         </form>
       </div>
     </div>
