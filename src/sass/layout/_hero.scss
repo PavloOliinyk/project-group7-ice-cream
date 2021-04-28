@@ -376,7 +376,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.06);
   transition: all 250ms linear;
-  z-index: 20;
+  z-index: 300;
 
   & .modal {
     position: absolute;
@@ -388,7 +388,6 @@
     border-radius: 4px;
     background-color: #c59191;
     padding: 40px;
-    z-index: 3;
   }
 
   & .modal__close-btn {
