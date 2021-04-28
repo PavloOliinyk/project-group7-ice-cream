@@ -119,8 +119,9 @@
   background-color: var(--accentColor);
   opacity: 0;
   transition: opacity 250ms linear, filter 250ms linear;
-
   cursor: pointer;
+
+  z-index: 200;
 
   &:hover,
   &:focus {

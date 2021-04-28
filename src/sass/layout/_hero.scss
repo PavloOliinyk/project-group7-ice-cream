@@ -1,14 +1,14 @@
 .hero {
   background-color: #ffb8ca;
-  // position: relative;
-  // overflow-x: hidden;
+  position: relative;
+  overflow-x: hidden;
 }
 .hero__container {
   padding-top: 193px;
   padding-bottom: 160px;
 
   position: relative;
-  overflow: hidden;
+  overflow-x: visible;
 }
 @media screen and (min-width: 768px) {
   .hero__container {
@@ -156,10 +156,10 @@
   top: 83px;
   left: 36px;
 
-  // width: 346px;
-  // height: 344px;
-  width: 280px;
-  height: 278px;
+  width: 346px;
+  height: 344px;
+  // width: 280px;
+  // height: 278px;
 
   border-radius: 50%;
   background-color: #ffa5ba;
