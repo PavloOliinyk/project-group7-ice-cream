@@ -246,7 +246,8 @@
     background-color: var(--accentColor);
   }
 }
-.hero__btn:hover .hero__btn-icon {
+.hero__btn:hover .hero__btn-icon,
+.hero__btn:focus .hero__btn-icon {
   fill: #fff;
 }
 @media screen and (min-width: 1280px) {
