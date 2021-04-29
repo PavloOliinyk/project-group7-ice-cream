@@ -16,7 +16,7 @@
   }
 
   &__item {
-    padding: 40px 20px;
+    padding: 40px 20px 24px;
     background-color: var(--primaryTextColor);
     box-shadow: 0px 8px 20px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -149,6 +149,8 @@
   }
 
   &__tel {
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
@@ -156,6 +158,9 @@
   }
 
   &__mail {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;

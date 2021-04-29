@@ -44,8 +44,15 @@
         srcset="./images/tablet/tab-hero-center.png 1x, ./images/tablet/tab-hero-center@2x.png 2x"
         media="(min-width: 768px)"
       />
-      <source srcset="./images/mobile/mob-hero-center.png 1x, ./images/mobile/mob-hero-center@2x.png 2x">
-      <img class="hero__img-center" src="./images/mobile/mob-hero-center.png" alt="Мороженое" />
+      <source
+        srcset="./images/mobile/mob-hero-center.png 1x, ./images/mobile/mob-hero-center@2x.png 2x"
+      />
+      <img
+        class="hero__img-center"
+        src="./images/mobile/mob-hero-center.png"
+        loading="lazy"
+        alt="Мороженое"
+      />
     </picture>
     <picture>
       <source
@@ -91,7 +98,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="hero__btn">
+        <button type="button" class="hero__btn" aria-label="open desciption">
           <svg class="hero__btn-icon">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
@@ -114,20 +121,22 @@
 <!--BACKDROP BUYNOW-->
 <div class="backdrop-buynow is-hidden" data-buynow-popup>
   <div class="modal">
-
     <button type="button" class="modal__close-btn" data-buynow-btn-close>
       <svg class="modal__icon-close-btn">
-          <use href="./images/icon/close-button.svg#icon-cross"></use>
+        <use href="./images/icon/close-button.svg#icon-cross"></use>
       </svg>
     </button>
 
     <form action="#" class="modal-form" autocomplete="off">
-      <p class="modal-form__title" lang="en">Ordering form </br> Buyer information</p>
+      <p class="modal-form__title" lang="en">
+        Ordering form <br />
+        Buyer information
+      </p>
 
       <label class="modal-form__label">
         <span class="modal-form__lable-name" lang="en">Name</span>
         <span class="modal-form__span">
-          <input type="text" name="user-name" class="modal-form__input" required>
+          <input type="text" name="user-name" class="modal-form__input" required />
           <!--<svg class="modal-form__icon-name">
                             //<use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                         </svg>-->
@@ -137,7 +146,13 @@
       <label class="modal-form__label">
         <span class="modal-form__lable-name" lang="en">Phone</span>
         <span class="modal-form__span">
-          <input type="tel" name="user-tel" class="modal-form__input" required title="096-111-11-11">
+          <input
+            type="tel"
+            name="user-tel"
+            class="modal-form__input"
+            required
+            title="096-111-11-11"
+          />
           <!--<svg class="modal-form__icon-tel">
                             //<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                         </svg>-->
@@ -147,7 +162,7 @@
       <label class="modal-form__label">
         <span class="modal-form__lable-name" lang="en">e-mail</span>
         <span class="modal-form__span">
-          <input type="email" name="user-email" class="modal-form__input" required>
+          <input type="email" name="user-email" class="modal-form__input" required />
           <!--<svg class="modal-form__icon-email">
                             //<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                         </svg>-->
@@ -156,14 +171,27 @@
 
       <label class="modal-form__label">
         <span class="modal-form__lable-name" lang="en">Comments</span>
-        <textarea name="user-message" class="modal-form__message" placeholder="Введите текст"></textarea>
+        <textarea
+          name="user-message"
+          class="modal-form__message"
+          placeholder="Введите текст"
+        ></textarea>
       </label>
-      <input type="checkbox" name="user-checkbox" id="user-term" class="modal-form__checkbox visually-hidden">
-      <label for="user-term" class="modal-form__ckbox-description" lang="en">I agree to receive product information, news, and updates&nbsp<a href=""
-          class="modal-form__contract-description" lang="en">agree with conditions</a></label>
+      <input
+        type="checkbox"
+        name="user-checkbox"
+        id="user-term"
+        class="modal-form__checkbox visually-hidden"
+      />
+      <label for="user-term" class="modal-form__ckbox-description" lang="en"
+        >I agree to receive product information, news, and updates&nbsp;<a
+          href="#"
+          class="modal-form__contract-description"
+          lang="en"
+          >agree with conditions</a
+        ></label
+      >
       <button type="submit" class="modal-form__btn-submit">Submit</button>
-
     </form>
-
   </div>
 </div>
