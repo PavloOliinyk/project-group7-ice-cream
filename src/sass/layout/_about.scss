@@ -1,0 +1,436 @@
+@media screen and (max-width: 767px) {
+  .box-about__bg-bossy {
+    background-image: url('../images/mobile/bg-bossy.png');
+    width: 280px;
+    height: 280px;
+    background-size: contain;
+    align-items: center;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__bg-bossy {
+      background-image: url('../images/mobile/bg-bossy@2x.png');
+      align-items: center;
+    }
+  }
+
+  .box-about__overlay {
+    background-image: url('../images/mobile/bg-milk.png');
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center bottom 8%;
+    background-size: contain;
+    // max-width: 320px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__overlay {
+      background-image: url('../images/mobile/bg-milk@2x.png');
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      background-position: center bottom 8%;
+      background-size: contain;
+    }
+  }
+
+  .box-about {
+    padding-top: 125px;
+    background: #fff5f6;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(177, 75, 75, 0.6);
+  transition: all 250ms linear;
+  z-index: 20;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 420px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 40px;
+
+  z-index: 10;
+  box-shadow: inset 0 0 10px 5px rgba(92, 18, 18, 0.3);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal__close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--main-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__suptitle {
+  font-family: var(--secondaryFont);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--informationColor);
+  margin-bottom: 15px;
+}
+
+.modal__title {
+  font-family: var(--secondaryFont);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accentColor);
+}
+
+.modal__main-text {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.62;
+  color: var(--secondaryTextColor);
+  margin-top: 26px;
+}
+
+.modal__details-text {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.62;
+  color: var(--descriptionColor);
+
+  margin-top: 27px;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 320px) {
+  .box-about__suptitle {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--informationColor);
+    margin-bottom: 15px;
+  }
+
+  .box-about__information {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .box-about__title {
+    font-family: var(--secondaryFont);
+
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accentColor);
+    margin-bottom: 26px;
+  }
+
+  .box-about__main-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: var(--secondaryTextColor);
+    margin-top: 46px;
+  }
+
+  .box-about__details-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: var(--descriptionColor);
+
+    margin-top: 47px;
+    margin-bottom: 17px;
+  }
+
+  .box-about__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 37px;
+
+    color: var(--accentColor);
+    width: 176px;
+    height: 44px;
+    margin-left: 32px;
+
+    background: var(--primaryTextColor);
+    border-radius: 22px;
+    border: none;
+
+    transition: background 250ms linear;
+
+    &:hover,
+    &:focus {
+      background: #ecebeb;
+    }
+
+    .box-about__btn-svg {
+      width: 9.8px;
+      height: 12px;
+      margin-left: 14px;
+    }
+  }
+}
+
+// ==========TABLET==========
+
+@media screen and (min-width: 768px) {
+  .box-about {
+    background: #fff5f6;
+    padding-top: 130px;
+  }
+
+  .box-about__suptitle {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .box-about__title {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 50px;
+  }
+
+  .box-about__content {
+    display: flex;
+  }
+
+  .box-about__information {
+    margin: 0;
+    padding: 0 0 0;
+  }
+
+  .box-about__bg-bossy {
+    flex-shrink: 0;
+    background-image: url('../images/tablet/bg-bossy.png');
+    background-size: contain;
+    width: 340px;
+    height: 340px;
+    margin-right: 17px;
+    margin-bottom: 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__bg-bossy {
+      flex-shrink: 0;
+      background-image: url('../images/tablet/bg-bossy@2x.png');
+      margin-right: 17px;
+      margin-bottom: 0;
+    }
+  }
+
+  .box-about__main-text {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  .box-about__details-text {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-top: 49px;
+    margin-bottom: 62px;
+  }
+
+  .box-about__button {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-left: 0px;
+  }
+
+  // modal
+
+  .modal {
+    width: 670px;
+    height: 460px;
+    padding: 40px 60px;
+  }
+
+  .modal__suptitle {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .modal__title {
+    font-size: 40px;
+  }
+
+  .modal__main-text {
+    font-size: 14px;
+    line-height: 2.1;
+    margin-top: 32px;
+  }
+
+  .modal__details-text {
+    font-size: 14px;
+    line-height: 2.1;
+
+    margin-top: 32px;
+  }
+}
+
+// =================DESCTOP==================
+
+@media screen and (min-width: 1280px) {
+  .box-about {
+    padding-top: 125px;
+    background: #fff5f6;
+  }
+
+  .box-about__overlay {
+    margin: 0 auto;
+
+    background-image: url('../images/desktop/bg-milk.png');
+    background-repeat: no-repeat;
+    // background-size: contain;
+    background-position: center bottom -41%;
+    // max-width: 1280px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__overlay {
+      background-image: url('../images/desktop/bg-milk@2x.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center bottom -41%;
+    }
+  }
+
+  .box-about__suptitle {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 15px;
+  }
+
+  .box-about__title {
+    font-size: 58px;
+    line-height: 1.14;
+    margin-bottom: 55px;
+  }
+
+  .box-about__bg-bossy {
+    background-image: url('../images/desktop/bg-bossy.png');
+    background-size: contain;
+    margin: 0;
+    width: 516px;
+    height: 516px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box-about__bg-bossy {
+      background-image: url('../images/desktop/bg-bossy@2x.png');
+      background-size: contain;
+      margin: 0;
+    }
+  }
+
+  .box-about__information {
+    margin-left: 0px;
+  }
+
+  .box-about__main-text {
+    font-size: 16px;
+    line-height: 1.76;
+    margin-left: 74px;
+    margin-right: 0;
+  }
+
+  .box-about__details-text {
+    font-size: 14px;
+    line-height: 1.94;
+    width: 463px;
+    margin-top: 35px;
+    margin-left: 74px;
+    margin-bottom: 45px;
+  }
+
+  .box-about__button {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-left: 74px;
+    margin-bottom: 0;
+  }
+
+  // modal
+
+  .modal {
+    width: 900px;
+    height: 520px;
+    padding: 40px 80px;
+  }
+
+  .modal__suptitle {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .modal__title {
+    font-size: 42px;
+  }
+
+  .modal__main-text {
+    font-size: 16px;
+    line-height: 2.2;
+    margin-top: 34px;
+  }
+
+  .modal__details-text {
+    font-size: 16px;
+    line-height: 2.2;
+
+    margin-top: 34px;
+  }
+}

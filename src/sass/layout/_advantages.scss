@@ -1,0 +1,119 @@
+.advantages {
+  background-color: #fff5f6;
+  padding: 39px 0 48px;
+
+  @media screen and (min-width: 768px) {
+    padding: 66px 0 31px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 39px 0 31px;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: -60px;
+    }
+  }
+
+  &__item {
+    &::before {
+      content: '';
+      display: block;
+      height: 50px;
+      width: 50px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    margin-bottom: 38px;
+
+    @media screen and (max-width: 767px) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 60px);
+      margin-left: 60px;
+    }
+
+    &:nth-child(1)::before {
+      background-image: url('../images/icon1.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/icon1@2x.png');
+      }
+    }
+
+    &:nth-child(2)::before {
+      background-image: url('../images/icon2.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/icon2@2x.png');
+      }
+    }
+
+    &:nth-child(3)::before {
+      background-image: url('../images/icon3.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/icon3@2x.png');
+      }
+    }
+  }
+
+  &__number {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    color: #d41443;
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 1.14;
+    }
+  }
+
+  &__description {
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--secondaryTextColor);
+    margin-top: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+  }
+}

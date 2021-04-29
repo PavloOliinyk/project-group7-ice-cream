@@ -1,0 +1,378 @@
+.products {
+  padding-top: 120px;
+  padding-bottom: 98px;
+
+  &__subtitle {
+    margin-bottom: 15px;
+
+    font-family: var(--secondaryFont);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--informationColor);
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    font-family: var(--secondaryFont);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--accentColor);
+  }
+}
+
+.products-list {
+  margin-right: auto;
+  margin-left: auto;
+  &__title {
+    position: relative;
+
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--primaryTextColor);
+
+    &::after {
+      content: '';
+      position: absolute;
+
+      width: 26px;
+      height: 6px;
+
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      fill: var(--primaryTextColor);
+
+      background-image: url('../images/dots-icon.svg');
+    }
+  }
+  &__description {
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--primaryTextColor);
+  }
+  &__btn-icon {
+    fill: currentColor;
+    width: 15px;
+    height: 15px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    outline: none;
+
+    border: none;
+    border-radius: 50%;
+
+    color: var(--accentColor);
+    transition: background-color 250ms linear, color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: var(--accentColor);
+      color: var(--primaryTextColor);
+    }
+  }
+}
+
+.products-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  position: relative;
+
+  transform: scale(1);
+  transition: transform 250ms linear;
+
+  box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.1);
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+
+    box-shadow: 0px 8px 8px rgba(122, 23, 48, 0.25);
+  }
+  &.ice-cream {
+    background-color: #ffb8ca;
+    &::before {
+      background-image: url(../images/mobile/mobile-icecream.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/mobile-icecream@2x.png);
+      }
+    }
+  }
+
+  &.ice-coffee {
+    background-color: #f0d1a5;
+    &::before {
+      background-image: url(../images/mobile/mobile-icecoffee.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/mobile-icecoffee@2x.png);
+      }
+    }
+  }
+  &.milkshakes {
+    background-color: #c2e297;
+    &::before {
+      background-image: url(../images/mobile/mobile-milkshakes.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/mobile-milkshakes@2x.png);
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 0%;
+
+    transform: translate(0, -50%);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .products {
+    &__subtitle {
+      font-size: 18px;
+      line-height: 1.17;
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 1.15;
+    }
+  }
+  .products-list {
+    &__title {
+      padding-bottom: 30px;
+
+      font-size: 20px;
+      line-height: 1.15;
+    }
+
+    &__description {
+      margin-top: 30px;
+
+      font-size: 14px;
+      line-height: 1.52;
+    }
+
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+  .products-list__item {
+    margin-top: 130px;
+    padding: 160px 42px 40px;
+
+    &::before {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    padding-top: 122px;
+    padding-bottom: 112px;
+    &__subtitle {
+      font-size: 26px;
+      line-height: 1.46;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 39px;
+    }
+  }
+  .products-list {
+    &__description {
+      line-height: 1.18;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+  }
+  .products-list {
+    display: flex;
+    margin-left: -20px;
+  }
+  .products-list__item {
+    margin-top: 150px;
+    margin-left: 20px;
+
+    padding: 150px 10px 40px 10px;
+
+    flex-basis: calc(100% / 3 - 20px);
+
+    &::before {
+      width: 220px;
+      height: 233px;
+    }
+
+    &.ice-cream {
+      &::before {
+        background-image: url(../images/tablet/tablet-icecream.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/tablet-icecream@2x.png);
+        }
+      }
+    }
+    &.ice-coffee {
+      &::before {
+        background-image: url(../images/tablet/tablet-icecoffee.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/tablet-icecoffee@2x.png);
+        }
+      }
+    }
+    &.milkshakes {
+      &::before {
+        background-image: url(../images/tablet/tablet-milkshakes.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/tablet-milkshakes@2x.png);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products {
+    padding: 127px 0 119px;
+    &__subtitle {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+    &__title {
+      font-size: 58px;
+      line-height: 1.13;
+      margin-bottom: 49px;
+    }
+  }
+  .products-list {
+    &__title {
+      padding-top: 40px;
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    &__btn {
+      margin-top: 60px;
+    }
+  }
+  .products-list__item {
+    margin-top: 210px;
+
+    padding: 160px 40px 40px 50px;
+
+    &::before {
+      width: 335px;
+      height: 335px;
+    }
+    &.ice-cream {
+      &::before {
+        background-image: url(../images/desktop/desktop-icecream.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-icecream@2x.png);
+        }
+      }
+    }
+    &.ice-coffee {
+      &::before {
+        background-image: url(../images/desktop/desktop-icecoffee.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-icecoffee@2x.png);
+        }
+      }
+    }
+    &.milkshakes {
+      &::before {
+        background-image: url(../images/desktop/desktop-milkshakes.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/desktop-milkshakes@2x.png);
+        }
+      }
+    }
+  }
+}
+.products-list__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 40px 15px;
+
+  visibility: hidden;
+  overflow: auto;
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  border-radius: 24px;
+  border: 1px solid var(--accentColor);
+  background-color: var(--primaryTextColor);
+  color: var(--accentColor);
+
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+
+  &.is-hidden {
+    opacity: 0.8;
+    visibility: visible;
+
+    transform: translateY(0%);
+    transition: transform 250ms linear;
+  }
+}

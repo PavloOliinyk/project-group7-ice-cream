@@ -1,0 +1,169 @@
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__ellipse"></div>
+    <picture>
+      <source
+        srcset="./images/desktop/des-hero-left.webp 1x, ./images/desktop/des-hero-left@2x.webp 2x"
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/desktop/des-hero-left.png 1x, ./images/desktop/des-hero-left@2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/tab-hero-left.webp 1x, ./images/tablet/tab-hero-left@2x.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/tablet/tab-hero-left.png 1x, ./images/tablet/tab-hero-left@2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img class="hero__img-left" src="./images/tablet/tab-hero-left.png" alt="Графин с молоком" />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/des-hero-center.webp    1x,
+          ./images/desktop/des-hero-center@2x.webp 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/desktop/des-hero-center.png 1x, ./images/desktop/des-hero-center@2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/tab-hero-center.webp 1x, ./images/tablet/tab-hero-center@2x.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/tablet/tab-hero-center.png 1x, ./images/tablet/tab-hero-center@2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source srcset="./images/mobile/mob-hero-center.png 1x, ./images/mobile/mob-hero-center@2x.png 2x">
+      <img class="hero__img-center" src="./images/mobile/mob-hero-center.png" alt="Мороженое" />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/desktop/des-hero-right.webp 1x, ./images/desktop/des-hero-right@2x.webp 2x"
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/desktop/des-hero-right.png 1x, ./images/desktop/des-hero-right@2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/tab-hero-right.webp 1x, ./images/tablet/tab-hero-right@2x.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/tablet/tab-hero-right.png 1x, ./images/tablet/tab-hero-right@2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="hero__img-right"
+        src="./images/tablet/tab-hero-right.png"
+        alt="Девушка ест мороженое"
+      />
+    </picture>
+    <div class="hero__description-wrapper">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title_accent">passion</span>
+      </h1>
+      <ul class="hero__btn-list list">
+        <li class="hero__btn-list-item">
+          <a class="hero__btn-list-link hero__btn-list-link_accent link" href="#products"
+            >Products</a
+          >
+        </li>
+        <li class="hero__btn-list-item">
+          <a class="hero__btn-list-link link" href="#about">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="hero__text-wrapper">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="hero__btn">
+          <svg class="hero__btn-icon">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <ul class="hero__stat-list list">
+      <li class="hero__stat-list-item">
+        <p class="hero__stat-list-accent-text">16</p>
+        <p class="hero__stat-list-text">cafes</p>
+      </li>
+      <li class="hero__stat-list-item">
+        <p class="hero__stat-list-accent-text">23</p>
+        <p class="hero__stat-list-text">food trucks</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!--BACKDROP BUYNOW-->
+<div class="backdrop-buynow is-hidden" data-buynow-popup>
+  <div class="modal">
+
+    <button type="button" class="modal__close-btn" data-buynow-btn-close>
+      <svg class="modal__icon-close-btn">
+          <use href="./images/icon/close-button.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <form action="#" class="modal-form" autocomplete="off">
+      <p class="modal-form__title" lang="en">Ordering form </br> Buyer information</p>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">Name</span>
+        <span class="modal-form__span">
+          <input type="text" name="user-name" class="modal-form__input" required>
+          <!--<svg class="modal-form__icon-name">
+                            //<use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>-->
+        </span>
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">Phone</span>
+        <span class="modal-form__span">
+          <input type="tel" name="user-tel" class="modal-form__input" required title="096-111-11-11">
+          <!--<svg class="modal-form__icon-tel">
+                            //<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>-->
+        </span>
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">e-mail</span>
+        <span class="modal-form__span">
+          <input type="email" name="user-email" class="modal-form__input" required>
+          <!--<svg class="modal-form__icon-email">
+                            //<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>-->
+        </span>
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__lable-name" lang="en">Comments</span>
+        <textarea name="user-message" class="modal-form__message" placeholder="Введите текст"></textarea>
+      </label>
+      <input type="checkbox" name="user-checkbox" id="user-term" class="modal-form__checkbox visually-hidden">
+      <label for="user-term" class="modal-form__ckbox-description" lang="en">I agree to receive product information, news, and updates&nbsp<a href=""
+          class="modal-form__contract-description" lang="en">agree with conditions</a></label>
+      <button type="submit" class="modal-form__btn-submit">Submit</button>
+
+    </form>
+
+  </div>
+</div>
